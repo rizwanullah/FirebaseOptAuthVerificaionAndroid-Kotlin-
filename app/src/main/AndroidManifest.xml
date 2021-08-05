@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.opt.auth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirebaseApp">
+        <activity android:name="com.opt.auth.activities.OTPActivity"
+            tools:ignore="MissingClass" />
+        <activity android:name="com.opt.auth.activities.LoginActivity"
+            tools:ignore="MissingClass" />
+        <activity android:name="com.opt.auth.activities.MainActivity"
+            tools:ignore="MissingClass" />
+        <activity android:name="com.opt.auth.activities.RegisterActivity"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
